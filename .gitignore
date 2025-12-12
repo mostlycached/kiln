@@ -1,2 +1,38 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+!default.pbxuser
+xcuserdata/
+
+# Build products
+build/
 build_log*.txt
+DerivedData/
+*.ipa
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Logs
+*.log
+error.log
