@@ -14,7 +14,7 @@ struct SummaryView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         
-                        Text("\(session.anchor) → \(session.startingForm)")
+                        Text("\(session.anchorName) → \(session.startingForm)")
                             .font(.headline)
                             .foregroundStyle(.secondary)
                     }
@@ -23,7 +23,7 @@ struct SummaryView: View {
                     
                     // Reflections by phase
                     ForEach(Array(KilnPhase.allCases), id: \.self) { phase in
-                        PhaseSummaryRow(phase: phase, reflection: session.reflections[phase])
+                        PhaseSummaryRow(phase: phase, reflection: session.reflection(for: phase))
                     }
                     
                     // New room emerged
@@ -75,12 +75,6 @@ struct PhaseSummaryRow: View {
 }
 
 #Preview {
-    var session = KilnSession.createDefault()
-    session.reflections[.enumeratedBed] = "The need to feel connected drives constant WiFi checking."
-    session.reflections[.anchorHeating] = "Turning off WiFi entirely—removing the possibility of resolution."
-    session.reflections[.emptyHeat] = "The urge to leave. The feeling of being unproductive."
-    session.reflections[.formTying] = "The anxiety binds to the soundscape of the shop."
-    session.reflections[.formSettling] = "The Analog Commons—a room of voyeuristic calm."
-    session.reflections[.observation] = "The anxiety of disconnection was actually an anxiety of silence."
+    let session = KilnSession()
     return SummaryView(session: session)
 }

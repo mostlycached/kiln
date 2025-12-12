@@ -1,7 +1,8 @@
 import Foundation
+import SwiftData
 
 /// The 6 phases of the Kiln process
-enum KilnPhase: Int, CaseIterable, Identifiable, Hashable {
+enum KilnPhase: Int, CaseIterable, Identifiable, Hashable, Codable {
     case enumeratedBed = 0
     case anchorHeating = 1
     case emptyHeat = 2
@@ -41,17 +42,68 @@ enum KilnPhase: Int, CaseIterable, Identifiable, Hashable {
 }
 
 /// A single session through the Kiln process
-struct KilnSession {
-    let anchor: String
-    let startingForm: String
-    var reflections: [KilnPhase: String] = [:]
-    var roomName: String = ""
-    var roomSpirit: String = ""
+@Model
+final class KilnSession {
+    var anchorName: String
+    var startingForm: String
+    var createdAt: Date
+    var isComplete: Bool
     
-    static let defaultAnchor = "Anxiety Navigation"
-    static let defaultForm = "The WiFi Fails"
+    // Store reflections as individual properties (SwiftData doesn't support Dictionary)
+    var reflection0: String  // enumeratedBed
+    var reflection1: String  // anchorHeating
+    var reflection2: String  // emptyHeat
+    var reflection3: String  // formTying
+    var reflection4: String  // formSettling
+    var reflection5: String  // observation
     
-    static func createDefault() -> KilnSession {
-        KilnSession(anchor: defaultAnchor, startingForm: defaultForm)
+    var roomName: String
+    var roomSpirit: String
+    
+    // Timer tracking for Empty Heat phase
+    var emptyHeatDuration: TimeInterval = 0
+    
+    init(
+        anchorName: String = "Anxiety Navigation",
+        startingForm: String = "The WiFi Fails",
+        createdAt: Date = Date(),
+        isComplete: Bool = false
+    ) {
+        self.anchorName = anchorName
+        self.startingForm = startingForm
+        self.createdAt = createdAt
+        self.isComplete = isComplete
+        self.reflection0 = ""
+        self.reflection1 = ""
+        self.reflection2 = ""
+        self.reflection3 = ""
+        self.reflection4 = ""
+        self.reflection5 = ""
+        self.roomName = ""
+        self.roomSpirit = ""
+        self.emptyHeatDuration = 0
+    }
+    
+    // Helper to get/set reflection by phase
+    func reflection(for phase: KilnPhase) -> String {
+        switch phase {
+        case .enumeratedBed: return reflection0
+        case .anchorHeating: return reflection1
+        case .emptyHeat: return reflection2
+        case .formTying: return reflection3
+        case .formSettling: return reflection4
+        case .observation: return reflection5
+        }
+    }
+    
+    func setReflection(_ text: String, for phase: KilnPhase) {
+        switch phase {
+        case .enumeratedBed: reflection0 = text
+        case .anchorHeating: reflection1 = text
+        case .emptyHeat: reflection2 = text
+        case .formTying: reflection3 = text
+        case .formSettling: reflection4 = text
+        case .observation: reflection5 = text
+        }
     }
 }

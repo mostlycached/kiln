@@ -12,6 +12,22 @@
 		A1000005 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000006 /* SummaryView.swift */; };
 		A1000007 /* KilnSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008 /* KilnSession.swift */; };
 		A1000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A100000A /* Assets.xcassets */; };
+		A1000020 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000021 /* SessionListView.swift */; };
+		A1000022 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000023 /* SessionDetailView.swift */; };
+		A1000030 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000031 /* Anchor.swift */; };
+		A1000032 /* AnchorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000033 /* AnchorPickerView.swift */; };
+		A1000040 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000041 /* Room.swift */; };
+		A1000042 /* RoomLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000043 /* RoomLibraryView.swift */; };
+		A1000050 /* Technique.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000051 /* Technique.swift */; };
+		A1000060 /* EmptyHeatTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000061 /* EmptyHeatTimerView.swift */; };
+		A1000070 /* RoomGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000071 /* RoomGraphView.swift */; };
+		A1000080 /* JournalFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000081 /* JournalFeedView.swift */; };
+		A1000090 /* CustomAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000091 /* CustomAnchor.swift */; };
+		A1000092 /* CustomAnchorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000093 /* CustomAnchorListView.swift */; };
+		A1000094 /* QuickStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000095 /* QuickStartView.swift */; };
+		A10000A0 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000A1 /* KeychainHelper.swift */; };
+		A10000A2 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000A3 /* GeminiService.swift */; };
+		A10000A4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000A5 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +37,22 @@
 		A1000008 /* KilnSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilnSession.swift; sourceTree = "<group>"; };
 		A100000A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A100000B /* Kiln.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiln.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000021 /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		A1000023 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		A1000031 /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
+		A1000033 /* AnchorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPickerView.swift; sourceTree = "<group>"; };
+		A1000041 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		A1000043 /* RoomLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLibraryView.swift; sourceTree = "<group>"; };
+		A1000051 /* Technique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technique.swift; sourceTree = "<group>"; };
+		A1000061 /* EmptyHeatTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHeatTimerView.swift; sourceTree = "<group>"; };
+		A1000071 /* RoomGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomGraphView.swift; sourceTree = "<group>"; };
+		A1000081 /* JournalFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalFeedView.swift; sourceTree = "<group>"; };
+		A1000091 /* CustomAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnchor.swift; sourceTree = "<group>"; };
+		A1000093 /* CustomAnchorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnchorListView.swift; sourceTree = "<group>"; };
+		A1000095 /* QuickStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartView.swift; sourceTree = "<group>"; };
+		A10000A1 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		A10000A3 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		A10000A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +80,8 @@
 				A1000002 /* KilnApp.swift */,
 				A1000010 /* Models */,
 				A1000011 /* Views */,
+				A10000B0 /* Utilities */,
+				A10000B1 /* Services */,
 				A100000A /* Assets.xcassets */,
 			);
 			path = Kiln;
@@ -65,6 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				A1000008 /* KilnSession.swift */,
+				A1000031 /* Anchor.swift */,
+				A1000041 /* Room.swift */,
+				A1000051 /* Technique.swift */,
+				A1000091 /* CustomAnchor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -74,8 +112,34 @@
 			children = (
 				A1000004 /* ContentView.swift */,
 				A1000006 /* SummaryView.swift */,
+				A1000021 /* SessionListView.swift */,
+				A1000023 /* SessionDetailView.swift */,
+				A1000033 /* AnchorPickerView.swift */,
+				A1000043 /* RoomLibraryView.swift */,
+				A1000061 /* EmptyHeatTimerView.swift */,
+				A1000071 /* RoomGraphView.swift */,
+				A1000081 /* JournalFeedView.swift */,
+				A1000093 /* CustomAnchorListView.swift */,
+				A1000095 /* QuickStartView.swift */,
+				A10000A5 /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A10000B0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A10000A1 /* KeychainHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A10000B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000A3 /* GeminiService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +215,22 @@
 				A1000003 /* ContentView.swift in Sources */,
 				A1000005 /* SummaryView.swift in Sources */,
 				A1000007 /* KilnSession.swift in Sources */,
+				A1000020 /* SessionListView.swift in Sources */,
+				A1000022 /* SessionDetailView.swift in Sources */,
+				A1000030 /* Anchor.swift in Sources */,
+				A1000032 /* AnchorPickerView.swift in Sources */,
+				A1000040 /* Room.swift in Sources */,
+				A1000042 /* RoomLibraryView.swift in Sources */,
+				A1000050 /* Technique.swift in Sources */,
+				A1000060 /* EmptyHeatTimerView.swift in Sources */,
+				A1000070 /* RoomGraphView.swift in Sources */,
+				A1000080 /* JournalFeedView.swift in Sources */,
+				A1000090 /* CustomAnchor.swift in Sources */,
+				A1000092 /* CustomAnchorListView.swift in Sources */,
+				A1000094 /* QuickStartView.swift in Sources */,
+				A10000A0 /* KeychainHelper.swift in Sources */,
+				A10000A2 /* GeminiService.swift in Sources */,
+				A10000A4 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
